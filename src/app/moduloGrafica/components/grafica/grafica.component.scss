@@ -1,0 +1,14 @@
+
+.flex {
+    margin-top: 2em;
+    display: flex;
+    column-gap: 2em;
+  }
+  
+  .flex-item {
+    flex-basis: 50%;
+  }
+  
+  tr.line-2 {
+    color: red;
+  }

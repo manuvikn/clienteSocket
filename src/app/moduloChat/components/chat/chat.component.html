@@ -1,0 +1,18 @@
+<div class="mt-4">
+
+    <h3>Mensajes</h3>
+
+    <div #messagesContainer class="messagesContainer">
+
+        <p *ngFor="let message of messages" class="message" [ngClass]="{'myMessage': usuario?.nombre == message.origin}"><strong>{{message.origin}}:</strong> {{ message.message }}</p>
+
+    </div>
+
+    <form (ngSubmit)="sendMessage()">
+
+        <input type="text" class="form-control" [(ngModel)]="message" name="message" placeholder="Escribe un mensaje...">
+
+    </form>
+
+
+</div>

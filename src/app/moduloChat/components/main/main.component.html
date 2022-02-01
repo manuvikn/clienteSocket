@@ -1,0 +1,20 @@
+<div class="container mt-4 mb-4">
+
+    <div class="headerContainer">
+        <h1>Usuario: {{ webSocketService.usuario?.nombre }}</h1>
+        <button class="btn btn-danger" (click)="logoutUser()">Logout</button>
+    </div>
+    <hr>
+  
+    <div class="row">
+        <div class="col-6">
+            <app-lista-usuarios></app-lista-usuarios>
+        </div>
+
+        <div class="col-6">
+            <app-chat></app-chat>
+        </div>
+    </div>
+
+  
+  </div>

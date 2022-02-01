@@ -1,0 +1,14 @@
+<div class="listaUsuariosContainer">
+
+    <h3>Usuarios conectados</h3>
+
+    <ul class="list-group">
+        <li *ngFor="let user of usuariosActivos$ | async" class="list-group-item list-group-item-info text-end">
+            <div class="listItem"><strong>{{ user.nombre }}</strong>
+            <span class="badge rounded-pill" [ngClass]="{'bg-success': user.sala != 'sin-sala', 'bg-secondary': user.sala == 'sin-sala'}">{{ user.sala }}</span></div>
+            <span class="badge rounded-pill bg-primary badgeId">{{ user.id }}</span>
+        </li>
+    </ul>
+
+
+</div>

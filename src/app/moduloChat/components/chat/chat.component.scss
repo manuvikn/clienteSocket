@@ -1,0 +1,21 @@
+.messagesContainer {
+
+    height: 30em;
+    width: 100%;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 4px;
+    margin-bottom: 1em;
+    overflow-y: scroll;
+    padding: 0.5em;
+
+}
+
+.message {
+    margin: 0.5em;
+    width: 70%;
+}
+
+.myMessage {
+    margin-left: auto;
+    text-align: end;
+}
